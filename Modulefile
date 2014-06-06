@@ -1,0 +1,11 @@
+name    'puppetlabs-openstack_extras'
+version '0.0.1'
+source  'https://github.com/stackforge/puppet-openstack_extras'
+author  'Puppet Openstack Community'
+license 'Apache License 2.0'
+summary 'Extra stuff that is useful for Openstack Modules'
+description 'Extra stuff that can be used to support Openstack Deployments'
+project_page 'https://launchpad.net/puppet-openstack_extras'
+
+dependency 'puppetlabs/apt', '>=1.0.0 <2.0.0'
+dependency 'puppetlabs/stdlib', '>= 3.2.0'
