@@ -103,6 +103,9 @@ neutron security-group-rule-create --protocol icmp --direction ingress test_sec_
 neutron security-group-rule-create --protocol tcp --port-range-min 22 \
   --port-range-max 22 --direction ingress test_sec_group
 sleep <%= @sleep_time %>
+<% if @pre_ssh_cmd != '' -%>
+  <%= @pre_ssh_cmd %>
+<% end -%>
 ssh $login_user@$floating_ip -i /tmp/id_rsa -o StrictHostKeyChecking=no hostname
 <% end %>
 exit 0

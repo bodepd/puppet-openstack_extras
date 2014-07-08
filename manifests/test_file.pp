@@ -19,7 +19,8 @@ class openstack_extras::test_file(
   $image_type   = 'cirros',
   $sleep_time   = '15',
   $floating_ip  = false,
-  $neutron      = true
+  $neutron      = true,
+  $pre_ssh_cmd  = '',
 ) {
 
   file { $path:
